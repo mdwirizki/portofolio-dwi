@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Dwi Rizki - Professional Portfolio</title>
+    <!-- Tailwind CSS v4 -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+    </style>
+</head>
+<body class="bg-[#F8FAFC] text-[#0F172A] antialiased min-h-screen flex flex-col justify-between">
+
+    <!-- NAVIGATION HEADER -->
+    <nav class="sticky top-0 z-50 bg-[#0F172A] text-white border-b border-slate-800 shadow-md">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-2">
+                <span class="w-3 h-3 bg-[#EA580C] rounded-full animate-pulse"></span>
+                <a href="#" class="font-extrabold text-lg tracking-wider text-white">MDR<span class="text-[#EA580C]">.</span></a>
+            </div>
+            <!-- Menu Navigasi Berbasis Tab -->
+            <div class="flex flex-wrap justify-center gap-2 sm:gap-4 text-xs font-bold uppercase tracking-wider">
+                <button onclick="switchTab('beranda')" id="btn-beranda" class="tab-btn px-4 py-2 rounded-lg text-[#EA580C] bg-white/10 transition">Beranda</button>
+                <button onclick="switchTab('tentang')" id="btn-tentang" class="tab-btn px-4 py-2 rounded-lg text-slate-300 hover:text-white transition">Tentang Saya</button>
+                <button onclick="switchTab('pengalaman')" id="btn-pengalaman" class="tab-btn px-4 py-2 rounded-lg text-slate-300 hover:text-white transition">Pengalaman</button>
+                <button onclick="switchTab('kegiatan')" id="btn-kegiatan" class="tab-btn px-4 py-2 rounded-lg text-slate-300 hover:text-white transition">Kegiatan</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTAINER -->
+    <main class="max-w-6xl mx-auto px-6 py-12 flex-grow w-full">
+
+        <!-- ================= PAGE 1: BERANDA ================= -->
+        <div id="beranda" class="tab-content active space-y-12 animate-fadeIn">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center bg-white p-8 rounded-2xl border border-slate-200 shadow-xs">
+                <!-- Sesuai instruksi gambar, memuat foto, nama, motto tagline, dan professional summary -->
+                <div class="md:col-span-2 space-y-4">
+                    <span class="inline-block bg-[#EA580C]/10 text-[#EA580C] text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full">SME Relationship Manager</span>
+                    <h1 class="text-4xl font-extrabold tracking-tight text-[#0F172A]">Muhammad Dwi Rizki</h1>
+                    <p class="text-md font-semibold text-[#EA580C] leading-relaxed">
+                        Passionate About Community Growth, Engagement Strategy and Social Empowerment | Public Relations Enthusiast
+                    </p>
+                    <div class="text-slate-600 text-sm leading-relaxed space-y-4 pt-2">
+                        <p>Saya sangat bersemangat dalam membangun dan mengembangkan komunitas yang menghubungkan banyak orang, ide, serta tujuan. Berbekal pengalaman di bidang <em>Community Development, Partnership Building</em>, dan <em>Digital Engagement</em>, saya telah membantu menciptakan kolaborasi yang berdampak dengan sekolah, universitas, serta korporasi untuk mendorong berbagai inisiatif keberlanjutan.</p>
+                        <p>Bagi saya, komunitas jauh lebih bermakna daripada sekadar angka—ini tentang Koneksi, Kolaborasi, dan Pertumbuhan yang Berkelanjutan.</p>
+                    </div>
+                </div>
+                <div class="md:col-span-1 flex justify-center">
+                    <div class="relative group p-2 bg-white border border-slate-200 rounded-2xl shadow-sm">
+                        <!-- Komponen Placeholder Foto User -->
+                        <div class="w-64 h-80 bg-slate-100 rounded-xl overflow-hidden flex items-center justify-center text-slate-400 font-medium text-xs border border-slate-200 relative">
+                            <span class="absolute z-10 text-center px-4 bg-[#0F172A]/80 text-white py-2 w-full bottom-0 font-bold tracking-wide">FOTO USER</span>
+                            <div class="absolute inset-0 bg-gradient-to-tr from-[#0F172A]/20 to-transparent"></div>
+                            <!-- Jika ingin pasang foto asli, gunakan tag berikut: -->
+                            <!-- <img src="link_foto.jpg" alt="Muhammad Dwi Rizki" class="object-cover w-full h-full"> -->
+                            <svg class="w-16 h-16 opacity-40" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SEKSI STATISTIK UTAMA (DARI KARYA DATA SUMMARY) -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="bg-[#0F172A] text-white p-6 rounded-xl border-l-4 border-[#EA580C] shadow-xs">
+                    <h4 class="text-2xl font-extrabold text-white">90%</h4>
+                    <p class="text-slate-400 text-xs font-semibold uppercase tracking-wider mt-1">Engagement Rate</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-xs">
+                    <h4 class="text-2xl font-extrabold text-[#0F172A]">32+</h4>
+                    <p class="text-slate-500 text-xs font-semibold uppercase tracking-wider mt-1">Mitra Sekolah & Univ</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-xs">
+                    <h4 class="text-2xl font-extrabold text-[#0F172A]">13 Ton</h4>
+                    <p class="text-slate-500 text-xs font-semibold uppercase tracking-wider mt-1">Minyak Jelantah</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-xs">
+                    <h4 class="text-2xl font-extrabold text-[#EA580C]">5+</h4>
+                    <p class="text-slate-500 text-xs font-semibold uppercase tracking-wider mt-1">Rekam Kerja Eksklusif</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ================= PAGE 2: TENTANG SAYA ================= -->
+        <div id="tentang" class="tab-content space-y-8 animate-fadeIn">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Media Sosial & Hubungkan Bersama Saya -->
+                <div class="md:col-span-1 bg-white p-6 rounded-2xl border border-slate-200 shadow-xs flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <h2 class="text-lg font-bold text-[#0F172A] border-b border-slate-100 pb-2">Hubungkan Bersama Saya</h2>
+                        <p class="text-xs text-slate-500 font-bold uppercase tracking-wider">Media Sosial</p>
+                        <p class="text-sm text-slate-600 leading-relaxed">Silakan kunjungi profil media sosial saya untuk melihat rekam jejak, aktivitas digital, dan terhubung dengan saya.</p>
+                    </div>
+                    <div class="grid grid-cols-2 gap-3 pt-6">
+                        <a href="#" class="flex items-center gap-2 justify-center p-3 bg-[#F8FAFC] border border-slate-200 rounded-xl hover:bg-[#0F172A] hover:text-white transition group text-xs font-bold text-slate-700">
+                            <span>Instagram</span>
+                        </a>
+                        <a href="#" class="flex items-center gap-2 justify-center p-3 bg-[#F8FAFC] border border-slate-200 rounded-xl hover:bg-[#0F172A] hover:text-white transition group text-xs font-bold text-slate-700">
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="#" class="flex items-center gap-2 justify-center p-3 bg-[#F8FAFC] border border-slate-200 rounded-xl hover:bg-[#0F172A] hover:text-white transition group text-xs font-bold text-slate-700">
+                            <span>TikTok</span>
+                        </a>
+                        <a href="#" class="flex items-center gap-2 justify-center p-3 bg-[#F8FAFC] border border-slate-200 rounded-xl hover:bg-[#EA580C] hover:text-white transition group text-xs font-bold text-slate-700">
+                            <span>E-Mail</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Pendidikan Formal & Non-Formal -->
+                <div class="md:col-span-2 space-y-6">
+                    <!-- Pendidikan Formal -->
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-xs space-y-4">
+                        <div class="flex items-center gap-2 border-b border-slate-100 pb-2">
+                            <span class="text-base">🎓</span>
+                            <h2 class="text-md font-bold text-[#0F172A]">Pendidikan Formal</h2>
+                        </div>
+                        <div class="space-y-3 text-xs md:text-sm">
+                            <div class="flex justify-between items-start py-2 border-b border-slate-50">
+                                <div>
+                                    <h4 class="font-bold text-[#0F172A]">Universitas Komputer Indonesia Bandung</h4>
+                                    <p class="text-xs text-slate-500 mt-0.5">S1 Ilmu Komunikasi | IPK 3.74</p>
+                                </div>
+                                <span class="text-xs font-semibold text-slate-400 bg-slate-100 px-2 py-0.5 rounded">2018 - 2022</span>
+                            </div>
+                            <div class="flex justify-between items-start py-2 border-b border-slate-50">
+                                <div>
+                                    <h4 class="font-bold text-[#0F172A]">Sekolah Menengah Atas Negeri 45 Jakarta</h4>
+                                </div>
+                                <span class="text-xs font-semibold text-slate-400 bg-slate-100 px-2 py-0.5 rounded">2015 - 2018</span>
+                            </div>
+                            <div class="flex justify-between items-start py-2 border-b border-slate-50">
+                                <div>
+                                    <h4 class="font-bold text-[#0F172A]">Sekolah Menengah Pertama Muhammadiyah 39 Jakarta</h4>
+                                </div>
+                                <span class="text-xs font-semibold text-slate-400 bg-slate-100 px-2 py-0.5 rounded">2012 - 2015</span>
+                            </div>
+                            <div class="flex justify-between items-start py-2">
+                                <div>
+                                    <h4 class="font-bold text-[#0F172A]">Sekolah Dasar Islam Terpadu Al-Husnayain Bekasi</h4>
+                                </div>
+                                <span class="text-xs font-semibold text-slate-400 bg-slate-100 px-2 py-0.5 rounded">2006 - 2012</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pendidikan Non Formal -->
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-xs space-y-4">
+                        <div class="flex items-center gap-2 border-b border-slate-100 pb-2">
+                            <span class="text-base">⚽</span>
+                            <h2 class="text-md font-bold text-[#0F172A]">Pendidikan Non Formal</h2>
+                        </div>
+                        <div class="flex justify-between items-center text-xs md:text-sm">
+                            <div>
+                                <h4 class="font-bold text-[#0F172A]">Sekolah Sepak Bola Kamboja Jakarta</h4>
+                                <p class="text-xs text-slate-500 mt-0.5">Pengembangan kedisiplinan fisik dan kerja sama tim</p>
+                            </div>
+                            <span class="text-xs font-semibold text-slate-400 bg-slate-100 px-2 py-0.5 rounded">2011 - 2013</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ================= PAGE 3: PENGALAMAN ================= -->
+        <div id="pengalaman" class="tab-content space-y-12 animate-fadeIn">
+            
+            <!-- Sub-Seksi 1: 5 Pengalaman Kerja Profesional -->
+            <div class="space-y-6">
+                <h2 class="text-xl font-extrabold text-[#0F172A] border-l-4 border-[#EA580C] pl-3">Pengalaman Kerja Profesional</h2>
+                <div class="grid grid-cols-1 gap-4">
+                    
+                    <!-- Kerja 1: BRI -->
+                    <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-xs">
+                        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2 border-b border-slate-100 pb-3 mb-3">
+                            <div>
+                                <span class="bg-[#0F172A] text-white text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded">Contract</span>
+                                <h3 class="font-bold text-base text-[#0F172A] mt-1">Relationship Manager SME</h3>
+                                <p class="text-xs text-[#EA580C] font-semibold">Bank Rakyat Indonesia</p>
+                            </div>
+                            <span class="text-xs font-bold text-slate-500 bg-slate-100 px-3 py-1 rounded-md">Dec 2025 - June 2026</span>
+                        </div>
+                        <ul class="text-xs text-slate-600 space-y-1.5 list-disc list-inside">
+                            <li><strong>Maximizing profitability</strong> through <strong>intensive acquisition</strong> of medium-segment debtors and third-party fund mobilization.</li>
+                            <li>Ensuring <strong>high-quality credit disbursement</strong> through <strong>in-depth financial statement analysis</strong> and on-site verification.</li>
+                            <li>Maintaining existing client loyalty through <strong>strategic relationship management</strong> and business advisory services.</li>
+                            <li><strong>Optimizing revenue</strong> by integrating <strong>non-credit solutions and digital banking services</strong> into the clients' business ecosystems.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Kerja 2: Noovoleum -->
+                    <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-xs">
+                        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2 border-b border-slate-100 pb-3 mb-3">
+                            <div>
+                                <span class="bg-emerald-700 text-white text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded">Full Time</span>
+                                <h3 class="font-bold text-base text-[#0F172A] mt-1">Community Engagement Officer</h3>
+                                <p class="text-xs text-[#EA580C] font-semibold">Noovoleum</p>
+                            </div>
+                            <span class="text-xs font-bold text-slate-500 bg-slate-100 px-3 py-1 rounded-md">Sep 2024 - Sep 2025</span>
+                        </div>
+                        <ul class="text-xs text-slate-600 space-y-1.5 list-disc list-inside">
+                            <li><strong>Engaged community, education officials, schools, universities, and local businesses</strong>, including HORECA, to <strong>buid partnerships</strong> and boost used cooking oil recycling.</li>
+                            <li>Engaged in <strong>32 new school and universities partnerships</strong> and collected around <strong>13 tons of used cooking oil</strong>.</li>
+                            <li>Built and maintained strong partner relationships to ensure consistent UCO collection with around <strong>80% retention</strong>.</li>
+                            <li><strong>Organized school and promotional events</strong>, implemented engagement strategies, and coordinated logistics to <strong>boost awareness and retention</strong> in renewable energy solution.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Kerja 3: Kitalulus -->
+                    <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-xs">
+                        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2 border-b border-slate-100 pb-3 mb-3">
+                            <div>
+                                <span class="bg-[#0F172A] text-white text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded">Contract</span>
+                                <h3 class="font-bold text-base text-[#0F172A] mt-1">Community Associate</h3>
+                                <p class="text-xs text-[#EA580C] font-semibold">Kitalulus</p>
+                            </div>
+                            <span class="text-xs font-bold text-slate-500 bg-slate-100 px-3 py-1 rounded-md">Sep 2022 - Mar 2024</span>
+                        </div>
+                        <ul class="text-xs text-slate-600 space-y-1.5 list-disc list-inside">
+                            <li><strong>Developing and managing 3-5 communities</strong> within the application to create <strong>unique value propositions</strong> for community users.</li>
+                            <li>Handling day-to-day conversations with users across all communities with a <strong>90% interaction rate</strong>.</li>
+                            <li>Responsible for the <strong>growth and engagement</strong> of community members to foster active participation in the professional world.</li>
+                            <li>Staying updated on all <strong>emerging trends</strong>, particularly in <strong>social media</strong> and within the community, for <strong>digital marketing</strong> purposes.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Kerja 4: Generasi Cakap -->
+                    <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-xs">
+                        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2 border-b border-slate-100 pb-3 mb-3">
+                            <div>
+                                <span class="bg-orange-600 text-white text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded">Internship</span>
+                                <h3 class="font-bold text-base text-[#0F172A] mt-1">Strategic Partner</h3>
+                                <p class="text-xs text-[#EA580C] font-semibold">Generasi Cakap</p>
+                            </div>
+                            <span class="text-xs font-bold text-slate-500 bg-slate-100 px-3 py-1 rounded-md">Jul 2021 - Oct 2021</span>
+                        </div>
+                        <ul class="text-xs text-slate-600 space-y-1.5 list-disc list-inside">
+                            <li>Implementing the <strong>Design Thinking</strong> approach in the <strong>empathy stage</strong> towards the community.</li>
+                            <li>Designing a specialized learning curriculum to introduce the fundamental concepts of <strong>critical thinking</strong>.</li>
+                            <li>Conducting a <strong>comprehensive SWOT analysis</strong> to identify the strengths and weaknesses.</li>
+                            <li>Developing a suitable <strong>Business Model Canvas</strong> to ensure program sustainability.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Kerja 5: Asa Berdaya -->
+                    <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-xs">
+                        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2 border-b border-slate-100 pb-3 mb-3">
+                            <div>
+                                <span class="bg-orange-600 text-white text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded">Internship</span>
+                                <h3 class="font-bold text-base text-[#0F172A] mt-1">Strategic Partner</h3>
+                                <p class="text-xs text-[#EA580C] font-semibold">Asa Berdaya</p>
+                            </div>
+                            <span class="text-xs font-bold text-slate-500 bg-slate-100 px-3 py-1 rounded-md">Jul 2021 - Oct 2021</span>
+                        </div>
+                        <ul class="text-xs text-slate-600 space-y-1.5 list-disc list-inside">
+                            <li>Establishing and nurturing relationships while maintaining an <strong>active community engagement</strong> with key stakeholders.</li>
+                            <li>Orchestrating activities or programs in alignment with provided materials to deliver tangible benefits.</li>
+                            <li>Engaging in reflective practices to discern insights from every interaction with the community.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Sub-Seksi 2: Organisasi Kuliah & Sekolah -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Kuliah -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-xs space-y-4">
+                    <h3 class="text-sm font-bold text-[#0F172A] uppercase tracking-wider border-b border-slate-100 pb-2">🏛️ Organisasi - Perguruan Tinggi</h3>
+                    <div class="space-y-3 text-xs">
+                        <div class="p-3 bg-slate-50 rounded-lg">
+                            <p class="font-bold text-[#0F172A]">Kepala Departemen Minat & Bakat</p>
+                            <p class="text-slate-500 font-medium">Himpunan Mahasiswa Ilmu Komunikasi (2020 - 2021)</p>
+                        </div>
+                        <div class="p-3 bg-slate-50 rounded-lg">
+                            <p class="font-bold text-[#0F172A]">Kepala Divisi Olahraga</p>
+                            <p class="text-slate-500 font-medium">Himpunan Mahasiswa Ilmu Komunikasi (2019 - 2020)</p>
+                        </div>
+                        <div class="p-3 bg-slate-50 rounded-lg">
+                            <p class="font-bold text-[#0F172A]">Anggota Muda Divisi Pengabdian Masyarakat</p>
+                            <p class="text-slate-500 font-medium">Himpunan Mahasiswa Ilmu Komunikasi (2018 - 2019)</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sekolah -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-xs space-y-4">
+                    <h3 class="text-sm font-bold text-[#0F172A] uppercase tracking-wider border-b border-slate-100 pb-2">🏫 Organisasi - Sekolah</h3>
+                    <div class="space-y-3 text-xs">
+                        <div class="p-3 bg-[#EA580C]/5 border border-[#EA580C]/20 rounded-lg">
+                            <p class="font-bold text-[#0F172A]">Ketua Umum</p>
+                            <p class="text-slate-500 font-medium">Ikatan Pelajar Muhammadiyah 39 Jakarta (Periode 2014 - 2015)</p>
+                        </div>
+                        <div class="p-3 bg-slate-50 rounded-lg">
+                            <p class="font-bold text-[#0F172A]">Sekretaris Umum</p>
+                            <p class="text-slate-500 font-medium">Ikatan Pelajar Muhammadiyah 39 Jakarta (Periode 2013 - 2014)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- ================= PAGE 4: KEGIATAN ================= -->
+        <div id="kegiatan" class="tab-content space-y-8 animate-fadeIn">
+            <h2 class="text-xl font-extrabold text-[#0F172A] border-l-4 border-[#EA580C] pl-3">Sertifikasi, Jurnal & Webinar</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Jurnal Ilmiah -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-xs space-y-4 flex flex-col justify-between">
+                    <div class="space-y-2">
+                        <span class="text-[10px] font-bold uppercase tracking-wider text-blue-700 bg-blue-50 px-2 py-0.5 rounded">Publikasi Riset</span>
+                        <h3 class="font-bold text-sm text-[#0F172A] pt-2">International Conference on Business, Economic, Social Sciences & Humanities</h3>
+                        <p class="text-xs text-slate-500 italic">"Digital Communication Strategy Start-Up Psychology Service Bureau In Improving Consumer Self Development" (Maret 2023)</p>
+                    </div>
+                    <p class="text-xs text-slate-600 leading-relaxed pt-2 border-t border-slate-50">Meneliti efektivitas strategi penetrasi ekosistem startup komunikasi digital dalam mengubah retensi perilaku audiens.</p>
+                </div>
+
+                <!-- Sertifikasi Kompetensi -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-xs space-y-3">
+                    <span class="text-[10px] font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">Sertifikasi Resmi</span>
+                    <h3 class="font-bold text-sm text-[#0F172A] pt-2">Manajemen Portofolio Komunitas & Kredit SME</h3>
+                    <p class="text-xs text-slate-500">Diterbitkan oleh Internal Banking Academy & Lembaga Sertifikasi Kompetensi Perbankan.</p>
+                    <div class="text-xs text-slate-400 font-semibold pt-4">Kredensial Aktif Berkelanjutan</div>
+                </div>
+
+                <!-- Webinar Kreatif -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-xs space-y-3">
+                    <span class="text-[10px] font-bold uppercase tracking-wider text-orange-700 bg-orange-50 px-2 py-0.5 rounded">Pembicara / Peserta</span>
+                    <h3 class="font-bold text-sm text-[#0F172A] pt-2">Webinar Strategy: Community Management & Creative Content Marketing</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">Aktif membagikan pemaparan praktikal mengenai akselerasi relasi kemitraan, taktik pertumbuhan organik media sosial, dan penanganan analisis audiens digital.</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#0F172A] text-slate-400 text-xs py-6 text-center border-t border-slate-800">
+        <p class="tracking-wide">&copy; 2026 Muhammad Dwi Rizki. All rights reserved.</p>
+    </footer>
+
+    <!-- INTERACTIVE TAB JAVASCRIPT -->
+    <script>
+        function switchTab(tabId) {
+            // Sembunyikan semua konten tab
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => content.classList.remove('active'));
+
+            // Reset status tombol navigasi
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(btn => {
+                btn.classList.remove('text-[#EA580C]', 'bg-white/10');
+                btn.classList.add('text-slate-300', 'hover:text-white');
+            });
+
+            // Aktifkan konten tab yang dipilih
+            document.getElementById(tabId).classList.add('active');
+
+            // Berikan gaya aktif pada tombol yang ditekan
+            const activeBtn = document.getElementById('btn-' + tabId);
+            activeBtn.classList.remove('text-slate-300', 'hover:text-white');
+            activeBtn.classList.add('text-[#EA580C]', 'bg-white/10');
+        }
+    </script>
+
+</body>
+</html>
